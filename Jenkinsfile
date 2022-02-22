@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh 'git clone //https://gitlab.com/qacdevops/chaperootodo_client.git'
+                sh 'git clone https://gitlab.com/qacdevops/chaperootodo_client.git'
             }
         }
         stage('Docker') {
