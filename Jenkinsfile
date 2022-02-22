@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
             sh 'export DB_PASSWORD=12345'    
-            sh 'sudo docker-compose pull && sudo -E DB_PASSWORD=${DB_PASSWORD} docker-compose up -d'
+            sh 'sudo docker-compose.yml pull && sudo -E DB_PASSWORD=${DB_PASSWORD} docker-compose up -d'
             }
         }
     }
